@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>html-forms</title>
+	</head>
+	<body>
+		<h1>HTML-формы</h1>
+		<form action="#" method="post" target="_" autocomplete="on"></form>
+			<fieldset form="form_id" name="">
+				<legend>Текстовые поля</legend>
+				<div>
+					<label for="textField">Однострочное текстовое поле</label>
+					<input 
+					id="textField" 
+					type="text"
+					placeholder="Text"
+					maxlength="2">
+					<input id="passwordField" type="password" maxlength="5">
+					<label for="textareaField">Многострочный текст</label>
+					<label for="hiddenField">Скрытый текст</label>
+					<textareaid 
+					id="passwordField"
+					cols="4"
+					rows="6"
+					maxlength="67"
+					manlength=""
+					placeholder="Подсказка"
+					required
+					disabled
+					readonly
+					autofocus>
+					</textareaid>
+
+					<input id="fileField" type="file">
+					<input id="imageFileField" type="file" accept="image/*">
+					<input id="multiFileField" type="file" multiple>
+
+					<legend>Одиночные радиокнопки</legend>
+				<fieldset>
+					<label>
+						<input type="radio">Подумай, прежде чем выбрать
+					</label>
+					<label>
+						<input type="radio">Попробуй только не выбрать!
+					</label>
+				</fieldset>
+				<fieldset>
+					<label>
+						<input name="sex" type="radio">Мужской
+					</label>
+					<label>
+						<input name="sex" type="radio">Женский
+					</label>
+					<label>
+						<input name="sex" type="radio">Не определился
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Флажки</legend>
+					<fieldset>
+						<legend>Одиночные флажки</legend>
+						<label>
+							<input type="checkbox">Выбери меня
+						</label>
+						<label>
+							<input type="checkbox">Нет, меня
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Флажки</legend>
+						<label>
+							<input name="message[]" type="checkbox">Сообщение1
+						</label>
+						<label>
+							<input name="message[]" type="checkbox">Сообщение2
+						</label>
+						<label>
+							<input name="message[]" type="checkbox">Сообщение3
+					</fieldset>
+				</fieldset>
+					</label>
+				<fieldset>
+					<legend>Кнопки</legend>
+					<input type="button" value="обычная кнопка">
+					<input type="submit" value="Отправить">
+					<input type="image" src="img/1.jpg" alt="Регистрация">
+					<button 
+					type="submit"
+					formaction="#"
+					formmethod="post | get"
+					formnovalidate
+					value=" ">
+						<strong><em>HTML-содержимое</em></strong>
+					</button>
+				</fieldset>
+				<fieldset>
+					<legend>Выпадающий список</legend>
+					<select
+					autofocus
+					required
+					size="5">
+						<option value="1" selected="4" >Item1</option>
+						<option value="2">Item2</option>
+						<option value="3">Item3</option>
+						<option selected value="4">Item4</option>
+						<option value="5">Item5</option>
+					</select>
+					<select
+					multiple
+					autofocus
+					required
+					size="3">
+						<option value="1">Item1</option>
+						<option value="2">Item2</option>
+						<option value="3">Item3</option>
+						<option value="4">Item4</option>
+						<option value="5">Item5</option>
+					</select>
+					<select
+					autofocus
+					required
+					size="10">
+						<optgroup label="Item group 1"></optgroup>
+							<option value="1">Item1</option>
+							<option value="2">Item2</option>
+							<option value="3">Item3</option>
+							<option value="4">Item4</option>
+							<option value="5">Item5</option>
+						</optgroup>
+						<optgroup label="Item group 2"></optgroup>
+							<option value="6">Item6</option>
+							<option value="7">Item7</option>
+							<option value="8">Item8</option>
+							<option value="9">Item9</option>
+							<option value="10">Item10</option>
+						</optgroup>
+					</select>
+				</div>
+				<fieldset>
+					<div>
+						<label for="colorField">Выбор цвета</label>
+						<input id="colorField" type="color" value="#ff0000">
+					</div>
+					<div>
+						<label for="numberField">Ввод чисел</label>
+						<input id="numberField" type="number" value="6" min="1" max="10" step="1">
+					</div>
+					<div>
+						<label for="dateField">Календарь</label>
+						<input id="dateField" type="date" value="2017-04-18">
+					</div>
+					<div>
+						<label for="searchField">Поле для поиска</label>
+						<input id="searchField" type="search">
+					</div>
+				</fieldset>
+	</body>
