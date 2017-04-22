@@ -1,0 +1,25 @@
+.block {
+	margin: 40;
+	padding: 60;
+	border: 3px solid red;
+	height: 300px;
+	width: 400px;
+	/*background: gray;*/
+}
+
+/*фактическая ширина блока = 
+	ширина +левый отступ + правый отступ + 
+				левое поле + правое поле*/
+
+.block {
+	/*box-sizing: content-box;*/
+	box-sizing: border-box;
+	/*фактическая ширина блока = ширина + левое поле + правое поле*/
+}
+
+.block2 {
+	/*display: none;*/
+	visibility: hidden | collapse | visible;
+}
+
+/*margin collepse*/

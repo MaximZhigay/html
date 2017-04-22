@@ -1,0 +1,41 @@
+/*Верстка слоями*/
+
+/*Плавающий элемент*/
+/*float: left | right | none
+
+1. становится блочным
+2. обтекается строчными*/
+
+.block {
+	float: right;
+}
+
+p {
+	clear: both;
+	} 
+
+/*ПЕРЕПОЛНЕНИЕ и overflow*/
+
+	.bord {
+		width: 200px;
+		height: 200px;
+		border: 2px solid red;
+		overflow: hidden;
+		/*overflow: hidden | scroll | visible*/
+	}
+
+/*ПОЗИЦИОНИРОВАНИЕ*/
+
+.pos {
+	position: static; / по умолчанию
+	position: fixed; / фиксированное относительно окна браузера
+	position: absolute; / абсолютное от ближайшего элемента с position: relative;
+	position: relative;
+}
+
+/*задание координат*/
+
+top: 13px;
+left: 2px;
+right: 0;
+/*bottom: 45;*/
