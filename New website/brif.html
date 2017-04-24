@@ -1,98 +1,145 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>CarRent</title>
-	</head>
-	<body>
-		<p align="center">	
-			<a href="site.html">
-				<font size="20" color="black" face="brush script mt">CarRent</font><br>
-			</a>
-		</p>
-		<p align="center">
-			<font size="4" color="black" face="century gothic"><i>Аренда автомобиля без хлопот!</i></font>
-		</p>
-		<p>
-			<font size="4" color="black" face="candara">Анкета для водителей</font><br>
-		</p>
-		<form method="post" action="#">
-			<fieldset>
-				<legend>Данные водителя</legend>
-
-				<div>
-					<input type="text" placeholder="Фамилия">
-					<input type="text" placeholder="Имя">
-					<input type="text" placeholder="Отчество">
-					<label for="phoneField">Номер мобильного телефона</label>
-            		<input id="phoneField" type="tel" placeholder="+79811008000">
+<head>
+	<meta charset="utf-8">
+	<title>Index</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<ul class="menu">
+					<li>
+						<a href="#">МЕНЮ 1</a>
+						<ul>
+							<li><a href="company.html">О компании</a></li>
+							<li><a href="car.html">Автомобили</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">МЕНЮ 2</a>
+						<ul>
+							<li><a href="company.html">О компании</a></li>
+							<li><a href="car.html">Автомобили</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</li>
+					<li><a href="#">МЕНЮ 3</a>
+						<ul>
+							<li><a href="company.html">О компании</a></li>
+							<li><a href="car.html">Автомобили</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="image5"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="text">
+					<p><a href="index.html"><font size="20" color="black" face="brush script mt">CarRent</font></a></p>
+					<p><font size="4" color="black" face="century gothic"><i>Аренда автомобиля без хлопот!</i></font></p>
 				</div>
-            	<div><br>
-					<label for="dateField">Дата получения водительского удостоверения</label>
-					<input id="dateField" type="date" value="2010-01-01">
-					<label for="emailField">Адрес электронной почты</label>
-					<input id="emailField" type="email" placeholder="ivanov@mail.ru">
-				</div>
-			</fieldset>
-			<fieldset><br>
-				<legend>Данные автомобиля</legend>
-				<div>
-					<label for="textField1">Регистрационный номер</label>
-					<input id="textField1" type="text" placeholder="о777оо178">
-					<label for="textField2">Серия и номер свидетельства о регистрации</label>
-					<input id="textField2" type="text" placeholder="7575 102030">
-				</div>
-				<div><br>
-					<label for="multiFileField">Фотографии автомобиля с разных ракурсов (минимум 3)</label>
-					<input id="multiFileField" type="file" accept="image/*" multiple>
-				</div>
-			</fieldset>
-			<fieldset><br>
-				<legend>Характеристики автомобиля</legend>
-				<div>
-					<label for="brandField">Марка и модель автомобиля</label>
-					<input id="brandField" type="text" placeholder="Volkswagen Golf 5">
-        			<label for="yearField">Год выпуска</label>
-        			<select id="yearField">
-        				<option value="2007">2007</option>
-        				<option value="2008">2008</option>
-        				<option value="2009">2009</option>
-        				<option value="2010">2010</option>
-        				<option value="2011">2011</option>
-        				<option value="2012">2012</option>
-        				<option value="2013">2013</option>
-        				<option value="2014">2014</option>
-        				<option value="2015">2015</option>
-        				<option value="2016">2016</option>
-        				<option value="2017">2017</option>
-        			</select>
-            		<label for="colorField">Цвет кузова</label>
-            		<input id="colorField" type="color" value="#ff0000">
-        		</div>
-        		<div><br>
-        			<label for="numberField">Объем двигателя</label>
-        			<input id="numberField" type="number" value="1.6" min="1.1" max="9.5" step="0.1">
-        			<label><input name="engine" type="radio">Бензин</label>
-	                <label><input name="engine" type="radio">Дизель</label>
-	                <label><input name="engine" type="radio">Гибрид</label>
-	                <label><input type="checkbox">Газобалонное оборудование</label>
-        		</div>
-			</fieldset>
-			<br>
-			<fieldset>
-				<legend>Работа водителем</legend>
-				<div>
-					<label for="timeField1">Предпочтительное время работы c</label>
-					<input id="timeField1" type="time" value="09:00" min="00:00" max="23:59">
-					<label for="timeField2">до</label>
-					<input id="timeField2" type="time" value="21:00" min="00:00" max="23:59">
-				</div>
-				<br>
-				<div>
-					<label for="textareaField">Пожелания к работе</label>
-                <textarea id="textareaField"></textarea>
-				</div>
-			</fieldset>
-			<br>
-			<input type="submit" value="Отправить анкету">
-		</form>
+			</div>
+		</div>
+			<font size="4" color="black" face="candara">Анкета для водителей</font>
+		</p><br>
+		<div class="row">
+			<div class="col-8">
+				<form class="text2" method="post" action="#">
+					<fieldset>
+						<legend>Данные водителя</legend>
+						<br>
+						<div>
+							<input type="text" placeholder="Фамилия">
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Отчество">
+							<label for="phoneField">Номер мобильного телефона</label>
+		            		<input id="phoneField" type="tel" placeholder="+79811008000">
+						</div>
+		            	<div><br>
+							<label for="dateField">Дата получения водительского удостоверения</label>
+							<input id="dateField" type="date" value="2010-01-01">
+							<label for="emailField">Адрес электронной почты</label>
+							<input id="emailField" type="email" placeholder="ivanov@mail.ru">
+						</div>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Данные автомобиля</legend>
+						<br>
+						<div>
+							<label for="textField1">Регистрационный номер</label>
+							<input id="textField1" type="text" placeholder="о777оо178">
+							<label for="textField2">Серия и номер свидетельства о регистрации</label>
+							<input id="textField2" type="text" placeholder="7575 102030">
+						</div>
+						<div><br>
+							<label for="multiFileField">Фотографии автомобиля с разных ракурсов (минимум 3)</label>
+							<input id="multiFileField" type="file" accept="image/*" multiple>
+						</div>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Характеристики автомобиля</legend>
+						<br>
+						<div>
+							<label for="brandField">Марка и модель автомобиля</label>
+							<input id="brandField" type="text" placeholder="Volkswagen Golf 5">
+		        			<label for="yearField">Год выпуска</label>
+		        			<select id="yearField">
+		        				<option value="2007">2007</option>
+		        				<option value="2008">2008</option>
+		        				<option value="2009">2009</option>
+		        				<option value="2010">2010</option>
+		        				<option value="2011">2011</option>
+		        				<option value="2012">2012</option>
+		        				<option value="2013">2013</option>
+		        				<option value="2014">2014</option>
+		        				<option value="2015">2015</option>
+		        				<option value="2016">2016</option>
+		        				<option value="2017">2017</option>
+		        			</select>
+		            		<label for="colorField">Цвет кузова</label>
+		            		<input id="colorField" type="color" value="#ff0000">
+		        		</div>
+		        		<div><br>
+		        			<label for="numberField">Объем двигателя</label>
+		        			<input id="numberField" type="number" value="1.6" min="1.1" max="9.5" step="0.1">
+		        			<label><input name="engine" type="radio">Бензин</label>
+			                <label><input name="engine" type="radio">Дизель</label>
+			                <label><input name="engine" type="radio">Гибрид</label>
+			                <label><input type="checkbox">Газобалонное оборудование</label>
+		        		</div>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Работа водителем</legend>
+						<br>
+						<div>
+							<label for="timeField1">Предпочтительное время работы c</label>
+							<input id="timeField1" type="time" value="09:00" min="00:00" max="23:59">
+							<label for="timeField2">до</label>
+							<input id="timeField2" type="time" value="21:00" min="00:00" max="23:59">
+							<label for="textareaField">Пожелания к работе</label>
+		                	<textarea id="textareaField"></textarea>
+						</div>
+					</fieldset>
+					<br>
+					<input type="submit" value="Отправить анкету">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>	
+</html>
