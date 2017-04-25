@@ -1,0 +1,74 @@
+p{
+	background: pink;
+	margin: 10px;
+}
+.flex-container1{
+	display: flex;
+	background: plum;
+	/*justify-content: flex-end;*/
+	/*justify-content: center;*/
+	/*justify-content: spase-around;*/
+	justify-content: spase-between;
+}
+.flex-container2{
+	display: flex;
+	background: pink;
+	align-items: stretch;
+	/*align-items: center;*/
+	/*align-items: flex-start;*/
+	/*align-items: flex-end;*/
+	/*align-items: baseline;*/
+}
+.flex-container3{
+	display: flex;
+	background: pink;
+	align-items: stretch;
+	flex-decoration: row;
+	/*flex-decoration: row-reverse;*/
+	/*flex-decoration: column;*/
+	/*flex-decoration: column-reverse;*/
+
+}
+.flex-container4{
+	display: flex;
+	background: pink;
+	align-items: stretch;
+	width: 300px;
+	flex-wrap: nowrap;
+	/*flex-wrap: wrap;*/
+	/*flex-wrap: wrap-reverse;*/
+}
+.flex-container5{
+	display: flex;
+	background: pink;
+	align-items: stretch;
+	width: 300px;
+	height: 400px;
+	flex-wrap: wrap;
+	flex-decoration: row;
+	align-content: flex-end;
+	/*align-content: flex-start;*/
+	/*align-content: center;*/
+	/*align-content: spase-around;*/
+	/*align-content: spase-between;*/
+}
+.flex-container6{
+	display: flex;
+	background: pink;
+	align-items: stretch;
+	height: 300px;
+}
+.order{
+	order: 3;
+}
+.flex-basic{
+	flex-basis: 300px;
+	/*flex-grow: 3; растяжение*/
+	/*flex-shrink: 2; сужение*/
+}
+.align-self{
+	align-self: center;
+	/*align-items: stretch;*/
+	/*align-self: flex-start;*/
+	/*align-self: flex-end;*/
+}
