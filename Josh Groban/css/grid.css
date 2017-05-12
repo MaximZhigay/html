@@ -12,48 +12,96 @@
     padding: 0;
 }
 
+.col-0_5 {
+    width: 4.166%
+}
+
 .col-1 {
     width: 8.333%
+}
+
+.col-1_5 {
+    width: 12.5%
 }
 
 .col-2 {
     width: 16.667%
 }
 
+.col-2_5 {
+    width: 20.833%
+}
+
 .col-3 {
     width: 25%
+}
+
+.col-3_5 {
+    width: 29.166%
 }
 
 .col-4 {
     width: 33.333%
 }
 
+.col-4_5 {
+    width: 37.5%
+}
+
 .col-5 {
     width: 41.667%
+}
+
+.col-5_5 {
+    width: 45.833%
 }
 
 .col-6 {
     width: 50%
 }
 
+.col-6_5 {
+    width: 54.166%
+}
+
 .col-7 {
     width: 58.333%
+}
+
+.col-7_5 {
+    width: 62.5%
 }
 
 .col-8 {
     width: 66.667%
 }
 
+.col-8_5 {
+    width: 70.833%
+}
+
 .col-9 {
     width: 75%
+}
+
+.col-9_5 {
+    width: 79.166%
 }
 
 .col-10 {
     width: 83.333%
 }
 
+.col-10_5 {
+    width: 87.5%
+}
+
 .col-11 {
     width: 91.667%
+}
+
+.col-11_5 {
+    width: 95.833%
 }
 
 .col-12 {
