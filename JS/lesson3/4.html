@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var a = prompt("Введите фразу для шифрования..");
+		var key = prompt("Введите код для шифрования..");
+		var i = 0;
+		var newStr = "";
+		while(i<a.length){
+			var tempCode = a.charCodeAt(i)^key.charCodeAt(0);
+			newStr += String.fromCharCode(tempCode);
+			i++
+		}
+		console.log(newStr);
+	</script>
+</body>
+</html>

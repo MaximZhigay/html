@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var x = prompt("Введите адрес электронной почты в формате: info@mail.ru");
+		var m = /\w{1,}@\w{1,}\.\w{1,}/;
+		if (m.test(x)) {
+			alert("Адрес электронной почты введен корректно!")
+		} else {
+			alert("Адрес электронной почты введен некорректно((")
+		};
+	</script>
+</body>
+</html>
