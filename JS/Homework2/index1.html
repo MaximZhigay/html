@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Введение в JS</title>
+</head>
+<body>
+	<p>Начало документа...</p>
+		<script>
+			var x1 = prompt("Введите координаты точки X по оси X");
+			var x2 = prompt("Введите координаты точки X по оси Y");
+			var y1 = prompt("Введите координаты точки Y по оси X");
+			var y2 = prompt("Введите координаты точки Y по оси Y");
+			var z1 = prompt("Введите координаты точки Z по оси X");
+			var z2 = prompt("Введите координаты точки Z по оси Y");
+			
+			var Storona1 = Math.sqrt((x1-y1)*(x1-y1)+(x2-y2)*(x2-y2));
+			var Storona2 = Math.sqrt((z1-x1)*(z1-x1)+(z2-x2)*(z2-x2));
+			var Storona3 = Math.sqrt((z1-y1)*(z1-y1)+(z2-y2)*(z2-y2));
+				Math.floor(Storona1);
+				Math.floor(Storona2);
+				Math.floor(Storona3);
+			var kvdrt1 = Storona1*Storona1;
+			var kvdrt2 = Storona2*Storona2;
+			var kvdrt3 = Storona3*Storona3;
+				Math.floor(kvdrt1);
+				Math.floor(kvdrt2);
+				Math.floor(kvdrt3);
+
+			if ((kvdrt1==kvdrt2+kvdrt3)||(kvdrt2==kvdrt3+kvdrt1)||(kvdrt3==kvdrt1+kvdrt2))
+			{
+				alert("Треугольник прямоугольный")
+			} 
+			else
+			{
+				alert("Треугольник не прямоугольный")
+			}
+		</script>
+	<p>...Конец документа</p>
+</body>
+</html>

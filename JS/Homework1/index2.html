@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Введение в JS</title>
+</head>
+<body>
+	<p>Начало документа...</p>
+		<script> 
+			var delenie = 0; 
+			var chislo = prompt("Введите число"); 
+			var znak = Math.sign(chislo); 
+
+			if(znak==-1){ 
+			chislo=chislo*(-1); 
+			} 
+			delenie = Math.round(chislo/10); 
+			if(chislo==0){ 
+				alert("Нулевое число") 
+			} 
+			else if (delenie>=10){ 
+			if (znak==1){ 
+				alert("Положительное трехзначное число") 
+			} 
+			else{ 
+				alert("Отрицательное трехзначное число") 
+			} 
+			} 
+			else if ((delenie<10)&&(delenie!=0)){ 
+			if (znak==1){ 
+				alert("Положительное двузначное число") 
+			} 
+			else{ 
+				alert("Отрицательное двузначное число") 
+			} 
+			} 
+			else if (delenie==0){ 
+			if (znak==1){ 
+				alert("Положительное число") 
+			} 
+			else{ 
+				alert("Отрицательное число") 
+			} 
+			} 
+			else if(chislo==0){ 
+				alert("Нулевое число") 
+			} 
+</script> 
+	<p>...Конец документа</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Введение в JS</title>
+</head>
+<body>
+	<p>Начало документа...</p>
+		<script>
+			var a = prompt("Введите первое число");
+			var b = prompt("Введите второе число");
+			var c = prompt("Введите третье число");
+
+			if ((a < b) && (a < c)) {
+				alert("Первое число наименьшее")
+			}
+			else if ((b < a) && (b < c)) {
+				alert("Второе число наименьшее")
+			}
+			else if ((c < a) && (c < b)) {
+				alert("Третье число наименьшее")
+			}
+			else if ((a == b) && (b == c)) {
+				alert("Все числа совпадают, введите другие значения чисел!")
+			}
+		</script>
+	<p>...Конец документа</p>
+</body>
+</html>
