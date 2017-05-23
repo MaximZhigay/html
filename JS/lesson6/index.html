@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var cat = {
+			name: "Барсик",
+			age: 3,
+			keyword: "Мяу",
+		};
+		var dog = {
+			name: "Балбес",
+			age: 3,
+			keyword: "Гав",
+		};
+		function logHello(){
+				console.log(this.keyword + "Меня зовут" + this.name);
+			}
+		cat.logHello();
+	</script>
+</html>

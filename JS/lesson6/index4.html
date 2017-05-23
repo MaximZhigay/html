@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		function summ(a,b){
+			if(b === undefined){
+				return function(b){
+					return a - b;
+				};
+			};
+		};
+		console.log(summ(2,3));
+		console.log(summ(5)(3));
+	</script>
+</html>
