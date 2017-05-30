@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div style="height: 400px; width: 400px; position: relative; background-color: rgb(150,150,125)">
+		<div id="box" style="height: 40px; width: 40px; position: absolute; background-color: rgb(0,255,125); left: 0px; top: 0px;">
+		</div>
+	</div>
+	<script>
+		document.addEventListener('keydown', function(e){
+			if (e.keyCode === 37) {
+				box.style.left = (parseInt(box.style.left) - 9) + "px";
+			} else if (e.keyCode === 39) {
+				box.style.left = (parseInt(box.style.left) + 9) + "px";
+			} else if (e.keyCode === 38) {
+				box.style.top = (parseInt(box.style.top) - 9) + "px";
+			} else if (e.keyCode === 40) {
+				box.style.top = (parseInt(box.style.top) + 9) + "px";
+			};
+		}, false);
+	</script>
+</html>
