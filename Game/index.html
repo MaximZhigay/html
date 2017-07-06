@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io.connect('http://localhost:8080');
+
+		socket.emit('message', {message:"bla-bla"});
+
+		socket.on('news', function(data){
+			console.log(data)
+		});
+	</script>
+</head>
+<body>
+	<
+</body>
+</html>
